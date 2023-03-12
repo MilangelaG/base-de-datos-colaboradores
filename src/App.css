@@ -28,6 +28,20 @@
   color: #61dafb;
 }
 
+.badge {
+  margin: 5px;
+}
+
+.accordion-body .content {
+  padding: 8px !important;
+  background-color: antiquewhite;
+
+}
+.accordion-header {
+  padding: 8px;
+  background-color: rgb(246, 185, 106);
+
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
