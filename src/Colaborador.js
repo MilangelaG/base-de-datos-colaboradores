@@ -42,16 +42,15 @@ const Colaborador = () => {
                 <button type="submit" className="btn btn-primary"> Buscar </button>
               </form>
             </div>
+            <ul className="list-group">
+              {listaBusqueda.map(colaborador =>
+                <li className="list-group-item" key={colaborador.id} >
+                  <span> {colaborador.nombre} - {colaborador.correo}
+                    <span className="badge bg-secondary" onClick={() => eliminarColaborador(colaborador.id) } > eliminar </span>
+                  </span>
+                </li>)}
+            </ul>
           </div>
-
-          <ul className="list-group"> 
-            {listaBusqueda.map(colaborador =>
-              <li className="list-group-item" key={colaborador.id} >
-                <span> {colaborador.nombre} - {colaborador.correo}
-                  <span className="badge bg-secondary" onClick={() => eliminarColaborador(colaborador.id) } > eliminar </span>
-                </span>
-              </li>)}
-          </ul>
         </Accordion>
 
         <Accordion title="Crear Colaborador">

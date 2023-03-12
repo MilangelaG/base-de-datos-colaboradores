@@ -34,13 +34,13 @@
 
 .accordion-body .content {
   padding: 8px !important;
-  background-color: antiquewhite;
-
+  background-color: #f8f9fa;
+  min-height: 300px;
 }
 .accordion-header {
   padding: 8px;
-  background-color: rgb(246, 185, 106);
-
+  background-color: #cfe2ff;
+  color: #0a58ca;
 }
 @keyframes App-logo-spin {
   from {
